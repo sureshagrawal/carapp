@@ -1,14 +1,23 @@
 package com.nsgacademy;
 
+import java.util.List;
+
 public class Car {
     private Battery battery;
     private Engine engine;
-    private Tyre tyre;
+//    private Tyre tyre;
+    private List<Tyre> tyres;
 
     public Car() {
     }
 
-//    public Car(Battery battery, Engine engine, Tyre tyre) {
+//    public Car(Battery battery, Engine engine, List<Tyre> tyres) {
+//        this.battery = battery;
+//        this.engine = engine;
+//        this.tyres = tyres;
+//    }
+
+    //    public Car(Battery battery, Engine engine, Tyre tyre) {
 //        this.battery = battery;
 //        this.engine = engine;
 //        this.tyre = tyre;
@@ -30,18 +39,27 @@ public class Car {
         this.engine = engine;
     }
 
-    public Tyre getTyre() {
-        return tyre;
+//    public Tyre getTyre() {
+//        return tyre;
+//    }
+//
+//    public void setTyre(Tyre tyre) {
+//        this.tyre = tyre;
+//    }
+
+    public List<Tyre> getTyres() {
+        return tyres;
     }
 
-    public void setTyre(Tyre tyre) {
-        this.tyre = tyre;
+    public void setTyres(List<Tyre> tyres) {
+        this.tyres = tyres;
     }
 
     public void drive(){
         battery.supplyPower();
         engine.start();
-        tyre.rotate();
+        for(Tyre tyre : tyres)
+            tyre.rotate();
         System.out.println("car is running");
     }
 
@@ -50,7 +68,7 @@ public class Car {
         return "Car{" +
                 "battery=" + battery +
                 ", engine=" + engine +
-                ", tyre=" + tyre +
+                ", tyres=" + tyres +
                 '}';
     }
 }
