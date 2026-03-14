@@ -8,11 +8,11 @@ public class Car {
     public Car() {
     }
 
-    public Car(Battery battery, Engine engine, Tyre tyre) {
-        this.battery = battery;
-        this.engine = engine;
-        this.tyre = tyre;
-    }
+//    public Car(Battery battery, Engine engine, Tyre tyre) {
+//        this.battery = battery;
+//        this.engine = engine;
+//        this.tyre = tyre;
+//    }
 
     public Battery getBattery() {
         return battery;

@@ -1,7 +1,5 @@
 package com.nsgacademy;
 
-public class Engine {
-    public void start(){
-        System.out.println("Engine started...");
-    }
+public interface Engine {
+    void start();
 }

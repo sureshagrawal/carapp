@@ -7,17 +7,17 @@
     <!-- bean definitions here -->
 
     <bean id="car" class="com.nsgacademy.Car">
-<!--        <property name="battery" ref="bat"/>-->
-<!--        <property name="engine" ref="en"/>-->
-<!--        <property name="tyre" ref="ty"/>-->
+        <property name="battery" ref="bat"/>
+        <property name="engine" ref="peng"/>
+        <property name="tyre" ref="ty"/>
 
 <!--        <constructor-arg type="Engine" ref="en"/>-->
 <!--        <constructor-arg type="Battery" ref="bat"/>-->
 <!--        <constructor-arg type="Tyre" ref="ty"/>-->
 
-        <constructor-arg index="1" ref="en"/>
-        <constructor-arg index="0" ref="bat"/>
-        <constructor-arg index="2" ref="ty"/>
+<!--        <constructor-arg index="1" ref="peng"/>-->
+<!--        <constructor-arg index="0" ref="bat"/>-->
+<!--        <constructor-arg index="2" ref="ty"/>-->
 
     </bean>
 
@@ -25,6 +25,8 @@
 
     <bean id="ty" class="com.nsgacademy.Tyre"></bean>
 
-    <bean id="en" class="com.nsgacademy.Engine"></bean>
+<!--    <bean id="en" class="com.nsgacademy.Engine"></bean>-->
+    <bean id="peng" class="com.nsgacademy.PetrolEngine"></bean>
+    <bean id="deng" class="com.nsgacademy.DieselEngine"></bean>
 
 </beans>
