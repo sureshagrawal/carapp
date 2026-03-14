@@ -47,7 +47,17 @@
 
 
     <!--    <bean id="en" class="com.nsgacademy.Engine"></bean>-->
-    <bean id="peng" class="com.nsgacademy.PetrolEngine"></bean>
-    <bean id="deng" class="com.nsgacademy.DieselEngine"></bean>
+
+    <bean id="peng" class="com.nsgacademy.PetrolEngine">
+        <property name="fuelPump" ref="fp"/>
+<!--        <constructor-arg ref="fp"/>-->
+    </bean>
+
+    <bean id="deng" class="com.nsgacademy.DieselEngine">
+        <property name="fuelPump" ref="fp"/>
+<!--        <constructor-arg ref="fp"/>-->
+    </bean>
+
+    <bean id="fp" class="com.nsgacademy.FuelPump"></bean>
 
 </beans>
