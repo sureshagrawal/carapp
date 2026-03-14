@@ -5,6 +5,15 @@ public class Car {
     private Engine engine;
     private Tyre tyre;
 
+    public Car() {
+    }
+
+    public Car(Battery battery, Engine engine, Tyre tyre) {
+        this.battery = battery;
+        this.engine = engine;
+        this.tyre = tyre;
+    }
+
     public Battery getBattery() {
         return battery;
     }

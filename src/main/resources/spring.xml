@@ -7,9 +7,18 @@
     <!-- bean definitions here -->
 
     <bean id="car" class="com.nsgacademy.Car">
-        <property name="battery" ref="bat"/>
-        <property name="engine" ref="en"/>
-        <property name="tyre" ref="ty"/>
+<!--        <property name="battery" ref="bat"/>-->
+<!--        <property name="engine" ref="en"/>-->
+<!--        <property name="tyre" ref="ty"/>-->
+
+<!--        <constructor-arg type="Engine" ref="en"/>-->
+<!--        <constructor-arg type="Battery" ref="bat"/>-->
+<!--        <constructor-arg type="Tyre" ref="ty"/>-->
+
+        <constructor-arg index="1" ref="en"/>
+        <constructor-arg index="0" ref="bat"/>
+        <constructor-arg index="2" ref="ty"/>
+
     </bean>
 
     <bean id="bat" class="com.nsgacademy.Battery"></bean>
