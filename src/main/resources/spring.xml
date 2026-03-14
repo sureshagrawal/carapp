@@ -14,9 +14,9 @@
         <property name="tyres">
             <list>
                 <ref bean="ty1"/>
-                <ref bean="ty2"/>
+                <ref bean="tly2"/>
                 <ref bean="ty3"/>
-                <ref bean="ty4"/>
+                <ref bean="tly4"/>
             </list>
         </property>
 
@@ -39,11 +39,27 @@
 
     <bean id="bat" class="com.nsgacademy.Battery"></bean>
 
+
+
+
 <!--    <bean id="ty" class="com.nsgacademy.Tyre"></bean>-->
-    <bean id="ty1" class="com.nsgacademy.Tyre"></bean>
-    <bean id="ty2" class="com.nsgacademy.Tyre"></bean>
-    <bean id="ty3" class="com.nsgacademy.Tyre"></bean>
-    <bean id="ty4" class="com.nsgacademy.Tyre"></bean>
+<!--    <bean id="ty1" class="com.nsgacademy.Tyre"></bean>-->
+<!--    <bean id="ty2" class="com.nsgacademy.Tyre"></bean>-->
+<!--    <bean id="ty3" class="com.nsgacademy.Tyre"></bean>-->
+<!--    <bean id="ty4" class="com.nsgacademy.Tyre"></bean>-->
+
+
+    <bean id="ty1" class="com.nsgacademy.TubeTyre"></bean>
+    <bean id="ty2" class="com.nsgacademy.TubeTyre"></bean>
+    <bean id="ty3" class="com.nsgacademy.TubeTyre"></bean>
+    <bean id="ty4" class="com.nsgacademy.TubeTyre"></bean>
+
+
+    <bean id="tly1" class="com.nsgacademy.TubelessTyre"></bean>
+    <bean id="tly2" class="com.nsgacademy.TubelessTyre"></bean>
+    <bean id="tly3" class="com.nsgacademy.TubelessTyre"></bean>
+    <bean id="tly4" class="com.nsgacademy.TubelessTyre"></bean>
+
 
 
     <!--    <bean id="en" class="com.nsgacademy.Engine"></bean>-->
